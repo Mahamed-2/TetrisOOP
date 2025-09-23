@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj": {}
+  },
+  "projects": {
+    "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj",
+        "projectName": "TetrisOOP",
+        "projectPath": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj",
+        "packagesPath": "/Users/Sheikh/.nuget/packages/",
+        "outputPath": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Sheikh/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

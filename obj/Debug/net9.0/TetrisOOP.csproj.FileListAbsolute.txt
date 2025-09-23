@@ -1,0 +1,12 @@
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/bin/Debug/net9.0/tetris.mp3
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/bin/Debug/net9.0/TetrisOOP
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/bin/Debug/net9.0/TetrisOOP.dll
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/bin/Debug/net9.0/TetrisOOP.pdb
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/obj/Debug/net9.0/TetrisOOP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/obj/Debug/net9.0/TetrisOOP.AssemblyInfoInputs.cache
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/obj/Debug/net9.0/TetrisOOP.AssemblyInfo.cs
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/obj/Debug/net9.0/TetrisOOP.csproj.CoreCompileInputs.cache
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/obj/Debug/net9.0/TetrisOOP.dll
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/obj/Debug/net9.0/refint/TetrisOOP.dll
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/obj/Debug/net9.0/TetrisOOP.pdb
+/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/bin/Debug/net9.0/.DS_Store

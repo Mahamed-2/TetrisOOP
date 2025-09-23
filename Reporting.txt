@@ -1,0 +1,194 @@
+
+
+
+  Tetris OOP Project Report (with CodeLineSystem Labels)
+
+
+
+ 1. Character
+
+
+// [Identification] → Define grid constants (10x20, 4 blocks per piece)
+// [Declaration] → Properties Name, Form, Color
+// [Naming] → PascalCase naming (C convention)
+// [Functionality] → Provides metadata about tetrominoes
+// [Sustain] → Acts as a reusable base class
+
+
+ Responsibility: Base class for all blocklike objects (metadata).
+ Encapsulation: Provides grid constants safely.
+ Inheritance: Parent of Tetromino.
+ Polymorphism: PrintInfo is virtual for override.
+
+
+
+ 2. Tetromino
+
+
+// [Identification] → Shape = 4x4 boolean matrix
+// [Declaration] → Inherits from Character (OOP Inheritance)
+// [Relation] → Linked to Board (placement) & PieceFactory (creation)
+// [Functionality] → Rotation + movement logic
+// [Sustain] → Override PrintInfo for polymorphism
+
+
+ Responsibility: Represents a Tetris piece (position, rotation).
+ Encapsulation: Internal shape array hidden.
+ Abstraction: Rotation methods hide matrix logic.
+ Inheritance: Extends Character.
+ Polymorphism: Overrides PrintInfo.
+
+
+
+ 3. PieceFactory
+
+
+// [Identification] → Defines all 7 tetromino shapes
+// [Declaration] → Factory methods CreateI, CreateO, etc.
+// [Relation] → Supplies Tetromino objects to Game
+// [Functionality] → RandomPiece() handles random generation
+// [Sustain] → Centralizes templates → easier maintenance
+
+
+ Responsibility: Creates all tetrominoes.
+ Encapsulation: Shape templates hidden.
+ Abstraction: Game doesn’t know how shapes are built.
+
+
+
+ 4. Board
+
+
+// [Identification] → Grid = int[height,width], 1 = empty
+// [Declaration] → CanPlace, Place, ClearFullLines
+// [Relation] → Works with Tetromino (placement) & Game (rules)
+// [Functionality] → Validates moves, clears lines
+// [Sustain] → Keeps data consistent for rendering
+
+
+ Responsibility: Stores grid, validates placements, clears lines.
+ Encapsulation: Grid is private, only exposed via methods.
+ Abstraction: Hides raw array handling from Game.
+
+
+
+ 5. Renderer
+
+
+// [Identification] → Defines drawing symbols (█)
+// [Declaration] → DrawBoard method
+// [Relation] → Uses Board + Tetromino state
+// [Functionality] → Prints colored game field in console
+// [Sustain] → Output isolated from logic → easy to replace later
+
+
+ Responsibility: Draws the game state in console.
+ Encapsulation: Rendering logic is separate.
+ Abstraction: Game just calls Renderer.DrawBoard().
+
+
+
+ 6. Game
+
+
+// [Identification] → Main loop, input, scoring
+// [Declaration] → Run(), HandleKey(), TryMove(), TryRotate()
+// [Relation] → Orchestrates Board, Tetromino, Renderer, PieceFactory
+// [Functionality] → Implements gameplay rules
+// [Sustain] → StopMusic() ensures clean shutdown
+
+
+ Responsibility: Controls game loop & rules.
+ Encapsulation: Internal timing managed inside Run().
+ Abstraction: Exposes only Run() to Program.
+
+
+
+ 7. SoundManager
+
+
+// [Identification] → Notes[] frequencies, Durations[]
+// [Declaration] → PlayTetrisTheme(), StopMusic()
+// [Relation] → Called from Program + stopped by Game
+// [Functionality] → Crossplatform music (Windows = Beep, Mac/Linux = MP3 or ASCII melody)
+// [Sustain] → Loops in background until explicitly stopped
+
+
+ Responsibility: Provides background music.
+ Encapsulation: Notes & durations hidden inside class.
+ Abstraction: Game just says "PlayTetrisTheme()" / "StopMusic()".
+ Polymorphism: Different behavior per OS.
+
+
+
+ 8. Program
+
+
+// [Identification] → Entry point
+// [Declaration] → Main()
+// [Relation] → Starts SoundManager + Game
+// [Functionality] → Bootstraps whole system
+// [Sustain] → Minimal → clean entry/exit
+
+
+ Responsibility: Entry point only.
+ SRP: Does not handle logic.
+
+
+
+ CodeLineSystem Mapping → OOP Tetris
+
+| CodeLineSystem Step | Example in Tetris OOP                           |
+|  |  |
+| Identification  | Grid size, shapes, music notes defined          |
+| Declaration     | Properties, methods (e.g., Place, Run)      |
+| Relation        | Game uses Board, Tetromino, Renderer    |
+| Naming          | PascalCase conventions, descriptive class names |
+| Functionality   | Logic inside methods (rotation, placement)      |
+| Sustain         | Encapsulation, reusable classes, StopMusic()  |
+
+
+
+Report (for learning)
+
+Encapsulation
+
+Board hides grid logic, Tetromino hides rotation logic, Renderer hides console drawing.
+
+State is only modified via methods (Place, RotateCW), not directly.
+
+Abstraction
+
+Player sees “move left/right” instead of worrying about array indices.
+
+Renderer abstracts away the Console details.
+
+Polymorphism
+
+Shown in TryRotate(bool cw) (method behaves differently depending on input).
+
+Could be extended with IShape interface if you want more polymorphism.
+
+Inheritance
+
+Not heavily needed here, but Character could be a base class for all block types (then Tetromino : Character).
+
+Single Responsibility
+
+Board = collision + clearing.
+
+Tetromino = piece logic.
+
+Renderer = visuals.
+
+Game = rules + flow.
+
+Improvements possible
+
+Add Interface for IRenderer → allows swapping console renderer for GUI.
+
+Add abstract Shape class for inheritance demo.
+
+Add Unit Tests for board, rotation.
+
+
