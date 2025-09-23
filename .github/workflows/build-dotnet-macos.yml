@@ -1,0 +1,42 @@
+name: Build .NET Console App for macOS
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET 9.0
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 9.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build project
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Run tests (if any)
+      run: dotnet test --configuration Release --no-build --verbosity normal
+
+    - name: Publish for macOS
+      run: dotnet publish --configuration Release --runtime osx-x64 --self-contained true --output ./publish/macos
+
+    - name: List published files
+      run: ls -la ./publish/macos/
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: tetris-macos-app
+        path: ./publish/macos/
+        retention-days: 7
