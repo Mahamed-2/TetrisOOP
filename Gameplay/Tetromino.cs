@@ -3,16 +3,19 @@ using TetrisOOP.Characters;
 
 namespace TetrisOOP.Gameplay
 {
-    // Tetromino inherits from Character (Inheritance)
     public class Tetromino : Character
     {
         private bool[,] shape = new bool[4, 4];
         public int X { get; set; }
         public int Y { get; set; }
 
+       
+
         public Tetromino(string name, bool[,] initialShape, ConsoleColor color)
-            : base(name, "Tetromino", color) // calls Character constructor
+            : base(name, "Tetromino", color)       
         {
+            Color = color;
+            Form = "Tetromino";
             CopyShape(initialShape);
             X = 3;
             Y = 0;
@@ -48,7 +51,7 @@ namespace TetrisOOP.Gameplay
             return dst;
         }
 
-        // Polymorphism → override PrintInfo
+        // Only one PrintInfo method
         public override void PrintInfo()
         {
             Console.WriteLine($"Tetromino {Name} ({Form}), Color: {Color}");

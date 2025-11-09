@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7K86MEI+F9E=",
+  "dgSpecHash": "knWunV+T790=",
   "success": true,
-  "projectFilePath": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/Exercise/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj",
+  "expectedPackageFiles": [
+    "/Users/Sheikh/.nuget/packages/microsoft.net.illink.tasks/9.0.9/microsoft.net.illink.tasks.9.0.9.nupkg.sha512",
+    "/Users/Sheikh/.nuget/packages/microsoft.netcore.app.runtime.osx-x64/9.0.9/microsoft.netcore.app.runtime.osx-x64.9.0.9.nupkg.sha512",
+    "/Users/Sheikh/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-x64/9.0.9/microsoft.aspnetcore.app.runtime.osx-x64.9.0.9.nupkg.sha512"
+  ],
   "logs": []
 }

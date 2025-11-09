@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj": {}
+    "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/Exercise/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj": {}
   },
   "projects": {
-    "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj": {
+    "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/Exercise/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj",
+        "projectUniqueName": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/Exercise/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj",
         "projectName": "TetrisOOP",
-        "projectPath": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj",
+        "projectPath": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/Exercise/GameD/TETERIS_AI/TetrisOOP/TetrisOOP.csproj",
         "packagesPath": "/Users/Sheikh/.nuget/packages/",
-        "outputPath": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/övningar/GameD/TETERIS_AI/TetrisOOP/obj/",
+        "outputPath": "/Users/Sheikh/Desktop/Backend_Cloud Development_courses/Objektorienterad programmering med C# 1_2/Uppgifter/Vecka_4/Exercise/GameD/TETERIS_AI/TetrisOOP/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Sheikh/.nuget/NuGet/NuGet.Config"
@@ -20,6 +20,7 @@
           "net9.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,6 +44,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )",
+              "autoReferenced": true
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,12 +63,27 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.osx-x64",
+              "version": "[9.0.9, 9.0.9]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.osx-x64",
+              "version": "[9.0.9, 9.0.9]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "osx-x64": {
+          "#import": []
         }
       }
     }
